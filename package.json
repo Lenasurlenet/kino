@@ -1,5 +1,5 @@
 {
-  "name": "Kino",
+  "name": "Gridsome Basic",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -9,6 +9,7 @@
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
+    "@gridsome/vue-remark": "^0.1.9",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.13"

@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: 'LeKino',
+  siteName: 'Gridsome Basic',
   transformers: {
     remark: {
       externalLinksTarget: '_blank',
@@ -22,6 +22,15 @@ module.exports = {
             // ...local plugins
           ]
         }
+      }
+    },
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Post', // Required
+        baseDir: './blog', // Where .md files are located
+        pathPrefix: '/blog', // Add route prefix. Optional
+        template: './src/templates/PostIndex.vue' // Optional
       }
     },
     {
